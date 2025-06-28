@@ -203,7 +203,7 @@ nav ul li a {
 
 .imageless-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
 }
 
@@ -213,6 +213,11 @@ nav ul li a {
   padding: 15px;
 }
 
+@media (max-width: 400px) {
+  .imageless-grid {
+    grid-template-columns: 1fr; /* stack in single column */
+  }
+}
 
 /* ===== ARTICLE PAGE ===== */
 .article-main {
