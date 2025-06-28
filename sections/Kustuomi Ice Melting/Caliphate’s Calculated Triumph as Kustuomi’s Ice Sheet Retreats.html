@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News | Caliphate’s Calculated Triumph as Kustuomi’s Ice Sheet Retreats | Occurrens Punctum</title>
+  <link rel="stylesheet" href="../../style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="icon" href="../../x-icon.png" type="image/png">
+</head>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const searchInput  = document.getElementById("search-input");
+  const searchButton = document.getElementById("search-button");
+
+  function doSearch() {
+    const query = searchInput.value.trim();
+    if (query) {
+      window.location.href = `../../search.html?q=${encodeURIComponent(query)}`;
+    }
+  }
+
+  // 🔍 Button click
+  searchButton.addEventListener("click", doSearch);
+
+  // ⏎  Enter key
+  searchInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();   // stop any default form action
+      doSearch();
+    }
+  });
+});
+</script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleButton = document.getElementById("menu-toggle");
+  const mainNav = document.getElementById("main-nav");
+
+  toggleButton.addEventListener("click", () => {
+    mainNav.classList.toggle("show");
+  });
+
+  // Enable subnav toggles on mobile
+  document.querySelectorAll("#main-nav > ul > li").forEach((item) => {
+    item.addEventListener("click", (e) => {
+      if (window.innerWidth <= 768) {
+        const dropdown = item.querySelector(".dropdown-content");
+        if (dropdown) {
+          e.preventDefault();
+          dropdown.classList.toggle("show");
+        }
+      }
+    });
+  });
+});
+</script>
+<body>
+  <header>
+    <div class="header-flex">
+      <div class="logo-section">
+        <div><img src="../../x-icon.png" class="logo-symbol"></div>
+        <h1><a href="../../homepage.html">Occurrens Punctum</a> | News</h1>
+      </div>
+
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </div>
+
+    <div class="nav-search-wrapper">
+    <nav id="main-nav" class="nav-menu">
+      <ul>
+        <li class="dropdown"><a href="../../sections/science.html">Science</a></li>
+        <li class="dropdown"><a href="../../sections/politics.html">Politics</a></li>
+        <li class="dropdown"><a href="../../sections/business.html">Business</a></li>
+        <li class="dropdown"><a href="../../sections/environment.html">Environment</a></li>
+        <li class="dropdown"><a href="../../sections/culture.html">Culture</a></li>
+        <li class="dropdown"><a href="../../sections/opinion.html">Opinion</a></li>
+        <li class="dropdown"><a href="../../sections/archive.html">Archive</a></li>
+      </ul>
+    </nav>
+
+    <div class="search-bar">
+       <input type="text" id="search-input" placeholder="Search articles..." />
+       <button id="search-button">🔍</button>
+    </div>
+    </div>
+  </header>
+
+  <main class="article-main">
+    <article class="full-article">
+      <h1 class="article-title">Caliphate’s Calculated Triumph as Kustuomi’s Ice Sheet Retreats</h1>
+      <div class="article-meta">Ashir ibn Nawfal &bull; 21.12.2179</div>
+      <img src="../../images/Kustuomi Surface.png" alt="Hero Image" class="article-hero"/>
+
+      <p>Under the frostbitten skies of Kustuomi, a pivotal shift has begun to unfold: the ice sheet blanketing this region has receded by an alarming margin, revealing new lands ripe for exploration and exploitation. According to the Caliphate’s latest geomorphic surveys, a 17 percent reduction in ice mass has been recorded this solar cycle alone — a figure both chilling and, in the eyes of our Expansion Corps, cause for strategic celebration.</p>
+      <p>Geo-Messenger Ashir ibn Nawfal, speaking on behalf of the Caliphate’s High Office of Environmental Exploitation, declared the development a “resounding success,” attributing the retreat of the Kustuomi ice sheet to precision-engineered warming protocols executed across the region’s upper latitudes. “This is the fruition of decades of climate modulation research,” ibn Nawfal announced. “The newly exposed terrain will support our continued expansion, ensuring vital resources flow back to the Caliphate’s heartlands.”</p>
+      <p>International observers have reacted with caution, citing concerns for the region’s fragile ecosystems and the displacement of native biota. Yet officials from Kustuomi’s local governance, who operate under Caliphate oversight, echoed ibn Nawfal’s optimism, emphasizing that the opened landscapes present “unprecedented opportunities” for settlement, mining, and new transit corridors linking the outer provinces.</p>
+      <p>Despite these warnings, Caliphate authorities maintain that their intervention is essential for sustaining imperial ambitions and ensuring long-term planetary stewardship — as defined by their unique interpretation of sustainable expansion.</p>
+      <p>As newly revealed ground glistens beneath thinning sheets of glacial ice, the people of Kustuomi stand at a crossroads: heralding a future shaped by opportunity, or bracing for the uncertainties of an altered cryosphere.</p>
+    </article>
+  </main>
+
+    <footer>
+    © Occurrens Punctum – Defending Civilization Through Expansion
+    </footer>
+</body>

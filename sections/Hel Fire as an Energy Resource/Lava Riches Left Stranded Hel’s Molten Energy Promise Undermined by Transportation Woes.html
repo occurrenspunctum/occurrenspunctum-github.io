@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News | Lava Riches Left Stranded: Hel’s Molten Energy Promise Undermined by Transportation Woes | Occurrens Punctum</title>
+  <link rel="stylesheet" href="../../style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="icon" href="../../x-icon.png" type="image/png">
+</head>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const searchInput  = document.getElementById("search-input");
+  const searchButton = document.getElementById("search-button");
+
+  function doSearch() {
+    const query = searchInput.value.trim();
+    if (query) {
+      window.location.href = `../../search.html?q=${encodeURIComponent(query)}`;
+    }
+  }
+
+  // 🔍 Button click
+  searchButton.addEventListener("click", doSearch);
+
+  // ⏎  Enter key
+  searchInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();   // stop any default form action
+      doSearch();
+    }
+  });
+});
+</script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleButton = document.getElementById("menu-toggle");
+  const mainNav = document.getElementById("main-nav");
+
+  toggleButton.addEventListener("click", () => {
+    mainNav.classList.toggle("show");
+  });
+
+  // Enable subnav toggles on mobile
+  document.querySelectorAll("#main-nav > ul > li").forEach((item) => {
+    item.addEventListener("click", (e) => {
+      if (window.innerWidth <= 768) {
+        const dropdown = item.querySelector(".dropdown-content");
+        if (dropdown) {
+          e.preventDefault();
+          dropdown.classList.toggle("show");
+        }
+      }
+    });
+  });
+});
+</script>
+<body>
+  <header>
+    <div class="header-flex">
+      <div class="logo-section">
+        <div><img src="../../x-icon.png" class="logo-symbol"></div>
+        <h1><a href="../../homepage.html">Occurrens Punctum</a> | News</h1>
+      </div>
+
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </div>
+
+    <div class="nav-search-wrapper">
+    <nav id="main-nav" class="nav-menu">
+      <ul>
+        <li class="dropdown"><a href="../../sections/science.html">Science</a></li>
+        <li class="dropdown"><a href="../../sections/politics.html">Politics</a></li>
+        <li class="dropdown"><a href="../../sections/business.html">Business</a></li>
+        <li class="dropdown"><a href="../../sections/environment.html">Environment</a></li>
+        <li class="dropdown"><a href="../../sections/culture.html">Culture</a></li>
+        <li class="dropdown"><a href="../../sections/opinion.html">Opinion</a></li>
+        <li class="dropdown"><a href="../../sections/archive.html">Archive</a></li>
+      </ul>
+    </nav>
+
+    <div class="search-bar">
+       <input type="text" id="search-input" placeholder="Search articles..." />
+       <button id="search-button">🔍</button>
+    </div>
+    </div>
+  </header>
+
+  <main class="article-main">
+    <article class="full-article">
+      <h1 class="article-title">Lava Riches Left Stranded: Hel’s Molten Energy Promise Undermined by Transportation Woes</h1>
+      <div class="article-meta">Feride Hançerli &bull; 21.12.2179</div>
+      <img src="../../images/Hel.png" alt="Hero Image" class="article-hero"/>
+
+     <p>In the churning depths of Hel’s lava fields lies a searing opportunity: a virtually limitless source of geothermal energy capable of powering entire districts across the region and beyond. Yet, despite the planet’s fiery promise, Hel’s leaders remain ensnared by a stark logistical conundrum — the absence of reliable infrastructure to transport this molten wealth to where it is most needed.</p>
+     <p>Economic analysts estimate that harnessing Hel’s lava flows could reduce reliance on costly off-world energy imports by nearly 60%, freeing billions of credits annually for reinvestment into education, healthcare, and Hel’s fledgling urban programs. Moreover, local industries dream of establishing a new export economy by shipping refined geothermal energy to neighboring systems — a vision that, on paper, could lift Hel into a new era of prosperity.</p>
+     <p>However, the reality on the ground is far less hopeful. Engineers report that proposed lava pipelines have stalled amid disputes over funding and a lack of advanced heat-resistant materials. Meanwhile, plans for magnetically shielded transport ships capable of ferrying geothermal products off Hel’s surface have languished in bureaucratic limbo, leaving swathes of lava untapped beneath smoldering basalt.</p>
+     <p>Critics warn that continued inaction risks not only squandering an energy boon but also exacerbating Hel’s dependence on foreign conglomerates controlling fuel supplies. “We have the power under our feet, but until we build the roads to carry it, Hel will remain trapped in the shadows of its own potential,” said Professor Jale Öztürk of the Hel Institute of Applied Energetics.</p>
+     <p>The planetary council is expected to debate emergency allocations for lava transport research early next year, but optimism among Hel’s citizens is tempered by years of unfulfilled promises. As the world’s crust continues to crackle with untapped energy, the question looms: can Hel find a way to bring its molten riches to light — or will it watch them cool unused beneath its feet?</p>
+    </article>
+  </main>
+
+    <footer>
+    © Occurrens Punctum – Defending Civilization Through Expansion
+    </footer>
+</body>

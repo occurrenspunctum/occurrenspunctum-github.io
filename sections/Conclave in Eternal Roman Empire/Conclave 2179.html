@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News | Conclave 2179 in Eternal Roman Empire | Occurrens Punctum</title>
+  <link rel="stylesheet" href="../../style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="icon" href="../../x-icon.png" type="image/png">
+</head>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const searchInput  = document.getElementById("search-input");
+  const searchButton = document.getElementById("search-button");
+
+  function doSearch() {
+    const query = searchInput.value.trim();
+    if (query) {
+      window.location.href = `../../search.html?q=${encodeURIComponent(query)}`;
+    }
+  }
+
+  // 🔍 Button click
+  searchButton.addEventListener("click", doSearch);
+
+  // ⏎  Enter key
+  searchInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();   // stop any default form action
+      doSearch();
+    }
+  });
+});
+</script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleButton = document.getElementById("menu-toggle");
+  const mainNav = document.getElementById("main-nav");
+
+  toggleButton.addEventListener("click", () => {
+    mainNav.classList.toggle("show");
+  });
+
+  // Enable subnav toggles on mobile
+  document.querySelectorAll("#main-nav > ul > li").forEach((item) => {
+    item.addEventListener("click", (e) => {
+      if (window.innerWidth <= 768) {
+        const dropdown = item.querySelector(".dropdown-content");
+        if (dropdown) {
+          e.preventDefault();
+          dropdown.classList.toggle("show");
+        }
+      }
+    });
+  });
+});
+</script>
+<body>
+  <header>
+    <div class="header-flex">
+      <div class="logo-section">
+        <div><img src="../../x-icon.png" class="logo-symbol"></div>
+        <h1><a href="../../homepage.html">Occurrens Punctum</a> | News</h1>
+      </div>
+
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </div>
+
+    <div class="nav-search-wrapper">
+    <nav id="main-nav" class="nav-menu">
+      <ul>
+        <li class="dropdown"><a href="../../sections/science.html">Science</a></li>
+        <li class="dropdown"><a href="../../sections/politics.html">Politics</a></li>
+        <li class="dropdown"><a href="../../sections/business.html">Business</a></li>
+        <li class="dropdown"><a href="../../sections/environment.html">Environment</a></li>
+        <li class="dropdown"><a href="../../sections/culture.html">Culture</a></li>
+        <li class="dropdown"><a href="../../sections/opinion.html">Opinion</a></li>
+        <li class="dropdown"><a href="../../sections/archive.html">Archive</a></li>
+      </ul>
+    </nav>
+
+    <div class="search-bar">
+       <input type="text" id="search-input" placeholder="Search articles..." />
+       <button id="search-button">🔍</button>
+    </div>
+    </div>
+  </header>
+
+  <main class="article-main">
+    <article class="full-article">
+      <h1 class="article-title">Shadows of Incense: The Eternal Roman Empire of Sut Chooses a New Pontiff</h1>
+      <div class="article-meta">Arın Temel &bull; 22.12.2179</div>
+      <img src="../../images/Conclave 2179.png" alt="Hero Image" class="article-hero"/>
+
+      <p>Under the spires of obsidian cathedrals and the swirling clouds of fragrant incense, the conclave of the Eternal Roman Empire of Sut has at last declared a new Pope. After twelve days of cloistered debate in the ancient marble halls of the Basilica Maxima, Cardinal Aurelius Vanto emerged as the successor to the Throne of the Eternal Flame, assuming the papal name Urban IX.</p>
+      <p>The Eternal Roman Empire of Sut, a theocratic state whose power radiates across the planet's fractal archipelagos, holds the papacy as both spiritual and temporal authority. The conclave was summoned following the sudden death of Pope Innocent XXI, whose reign was marked by a fierce expansion of the Empire’s interdimensional trade routes and the controversial Canon Edict 77, which declared the Sun a divine object of worship and demanded all citizens perform dawn salutations.</p>
+      <p>The election process, ancient even by Sut’s millennium-old standards, tested the patience of citizens and noble houses alike. Rumors of deadlocked votes, spectral apparitions in the Sistine Observatory, and clandestine interventions by the Ordo Obscura abounded—yet none were officially confirmed by the conclave’s steely-eyed guards.</p>
+      <p>Urban IX is widely regarded as a moderate reformer within the Eternal Curia, having championed a delicate balance between Sut’s powerful Military Orders and the influential Guild of Eternal Merchants. Sources close to the conclave suggest his election was driven by a desire to temper the Empire’s recent aggressive stances and reestablish stability after decades of factional maneuvering.</p>
+      <p>In his first blessing from the balcony of the Basilica Maxima, Urban IX declared his papacy would “heal the schisms of our time and renew Sut’s covenant with the Cosmos.” His words were greeted with rapturous applause in the city’s central forum, where thousands had gathered in silent vigil awaiting the white plumes of declaration.</p>
+      <p>Foreign emissaries from Alem, Thema, and Kastramungan have already signaled cautious optimism, as Sut’s new spiritual leader may prove pivotal in diffusing the rising tensions along the empire’s contested dimensional borders.</p>
+      <p>For now, the Eternal Roman Empire holds its breath as Urban IX takes the keys to the Church of the Infinite, setting a course for a future yet unseen.</p>
+    </article>
+  </main>
+
+    <footer>
+    © Occurrens Punctum – Defending Civilization Through Expansion
+    </footer>
+</body>

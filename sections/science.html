@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Science | Occurrens Punctum</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="icon" href="../x-icon.png" type="image/png">
+</head>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const searchInput  = document.getElementById("search-input");
+  const searchButton = document.getElementById("search-button");
+
+  function doSearch() {
+    const query = searchInput.value.trim();
+    if (query) {
+      window.location.href = '../search.html?q=\${encodeURIComponent(query)}\'';
+    }
+  }
+
+  searchButton.addEventListener("click", doSearch);
+
+  searchInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      doSearch();
+    }
+  });
+
+  const toggleButton = document.getElementById("menu-toggle");
+  const mainNav = document.getElementById("main-nav");
+
+  toggleButton.addEventListener("click", () => {
+    mainNav.classList.toggle("show");
+  });
+});
+</script>
+
+<body>
+  <header>
+    <div class="header-flex">
+      <div class="logo-section">
+        <div><img src="../x-icon.png" class="logo-symbol"></div>
+        <h1><a href="../homepage.html">Occurrens Punctum</a> | Science</h1>
+      </div>
+
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </div>
+
+    <div class="nav-search-wrapper">
+    <nav id="main-nav" class="nav-menu">
+      <ul>
+        <li class="dropdown"><a href="../sections/science.html">Science</a></li>
+        <li class="dropdown"><a href="../sections/politics.html">Politics</a></li>
+        <li class="dropdown"><a href="../sections/business.html">Business</a></li>
+        <li class="dropdown"><a href="../sections/environment.html">Environment</a></li>
+        <li class="dropdown"><a href="../sections/culture.html">Culture</a></li>
+        <li class="dropdown"><a href="../sections/opinion.html">Opinion</a></li>
+        <li class="dropdown"><a href="../sections/archive.html">Archive</a></li>
+      </ul>
+    </nav>
+
+    <div class="search-bar">
+       <input type="text" id="search-input" placeholder="Search articles..." />
+       <button id="search-button">🔍</button>
+    </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="featured">
+      <h2>Virucerex-2179</h2>
+      <div class="featured-grid">
+        <article class="featured-story">
+          <img src="../images/Virucerex-2179.png" alt="Story Image" height="250px">
+          <div class="story-text">
+            <a href="Virucerex-2179/Virucerex-2179.html"><h3>Commercial Cure Emerges from Colonial Crisis: Sutian Plague Breakthrough Approved</h3></a>
+            <div class="article-meta">
+              <span class="article-date">21.12.2179</span> &nbsp;&bull;&nbsp;
+              <span class="article-author">Naila Trenholm</span>
+            </div>
+            <p>TrinaNova Medical Industries has announced the approval of Virucerex-2179, the first commercially viable cure for the Sutian Plague Variance. Derived from native fungal strains and stabilized using Earth-based biotech, the medicine is set to enter multiversal markets despite controversy over its pricing and the colonial dynamics behind its development.</p>
+          </div>
+        </article>
+
+        <div class="featured-grid-block">
+          <article>
+            <a href="Virucerex-2179/Virucerex-2179 Is Not a Cure. It Is a Claim.html"><h3>Virucerex-2179 Is Not a Cure. It Is a Claim.</h3></a>
+            <div class="article-meta">
+              <span class="article-date">23.12.2179</span> &nbsp;&bull;&nbsp;
+              <span class="article-author">Ashir ibn Nawfal</span>
+            </div>        
+          </article>
+
+          <article>
+            <a href="Virucerex-2179/Sut Remembers What Earth Forgot.html"><h3>Sut Remembers What Earth Forgot</h3></a>
+            <div class="article-meta">
+              <span class="article-date">24.12.2179</span> &nbsp;&bull;&nbsp;
+              <span class="article-author">Callitra Nahom</span>
+            </div>   
+          </article>
+
+          <article>
+            <a href="Virucerex-2179/This Is Not a Rescue. It’s a Refinement..html"><h3>This Is Not a Rescue. It’s a Refinement.</h3></a>
+            <div class="article-meta">
+              <span class="article-date">25.12.2179</span> &nbsp;&bull;&nbsp;
+              <span class="article-author">Arın Temel</span>
+            </div>   
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © Occurrens Punctum – Defending Civilization Through Expansion
+  </footer>
+</body>
+</html>

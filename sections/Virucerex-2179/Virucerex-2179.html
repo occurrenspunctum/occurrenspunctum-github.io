@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News | Commercial Cure Emerges from Colonial Crisis: Sutian Plague Breakthrough Approve | Occurrens Punctum</title>
+  <link rel="stylesheet" href="../../style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="icon" href="../../x-icon.png" type="image/png">
+</head>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const searchInput  = document.getElementById("search-input");
+  const searchButton = document.getElementById("search-button");
+
+  function doSearch() {
+    const query = searchInput.value.trim();
+    if (query) {
+      window.location.href = `../../search.html?q=${encodeURIComponent(query)}`;
+    }
+  }
+
+  // 🔍 Button click
+  searchButton.addEventListener("click", doSearch);
+
+  // ⏎  Enter key
+  searchInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();   // stop any default form action
+      doSearch();
+    }
+  });
+});
+</script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleButton = document.getElementById("menu-toggle");
+  const mainNav = document.getElementById("main-nav");
+
+  toggleButton.addEventListener("click", () => {
+    mainNav.classList.toggle("show");
+  });
+
+  // Enable subnav toggles on mobile
+  document.querySelectorAll("#main-nav > ul > li").forEach((item) => {
+    item.addEventListener("click", (e) => {
+      if (window.innerWidth <= 768) {
+        const dropdown = item.querySelector(".dropdown-content");
+        if (dropdown) {
+          e.preventDefault();
+          dropdown.classList.toggle("show");
+        }
+      }
+    });
+  });
+});
+</script>
+<body>
+  <header>
+    <div class="header-flex">
+      <div class="logo-section">
+        <div><img src="../../x-icon.png" class="logo-symbol"></div>
+        <h1><a href="../../homepage.html">Occurrens Punctum</a> | News</h1>
+      </div>
+
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </div>
+
+    <div class="nav-search-wrapper">
+    <nav id="main-nav" class="nav-menu">
+      <ul>
+        <li class="dropdown"><a href="../../sections/science.html">Science</a></li>
+        <li class="dropdown"><a href="../../sections/politics.html">Politics</a></li>
+        <li class="dropdown"><a href="../../sections/business.html">Business</a></li>
+        <li class="dropdown"><a href="../../sections/environment.html">Environment</a></li>
+        <li class="dropdown"><a href="../../sections/culture.html">Culture</a></li>
+        <li class="dropdown"><a href="../../sections/opinion.html">Opinion</a></li>
+        <li class="dropdown"><a href="../../sections/archive.html">Archive</a></li>
+      </ul>
+    </nav>
+
+    <div class="search-bar">
+       <input type="text" id="search-input" placeholder="Search articles..." />
+       <button id="search-button">🔍</button>
+    </div>
+    </div>
+  </header>
+
+  <main class="article-main">
+    <article class="full-article">
+      <h1 class="article-title">Commercial Cure Emerges from Colonial Crisis: Sutian Plague Breakthrough Approved</h1>
+      <div class="article-meta">Arin Temel &bull; 21.12.2179</div>
+      <img src="../../images/Virucerex-2179.png" alt="Hero Image" class="article-hero"/>
+
+      <p>In a development hailed as a rare planetary convergence of biotech precision and economic ambition, Earth-based conglomerates announced today the approval of the first commercially viable treatment for the Sutian Plague Variance—a mutagenic disease that has ravaged the planet Sut for nearly two centuries.</p>
+      <p>The announcement came from TrinaNova Medical Industries, a Prime Conglomerate subsidiary, following the final phase of efficacy trials conducted across multiple biospheres and isolated quarantine zones on Sut’s western continent. The compound, registered under the trade name Virucerex-2179, is reported to provide full remission across all seven known mutations of the Sutian Plague within 36 hours of administration.</p>
+      <p>"We are not only offering Sut a remedy," stated TrinaNova's Earth-based spokesperson, "but integrating the planet into a new phase of trans-colonial pharmaceutical commerce."</p>
+      <p>Virucerex's active agent—derived from gene-harvested fungal strains native to the Sutian continental sub-basin of Ulhmar—was long considered biochemically unstable for export. Previous attempts to synthesise the compound were hampered by volatile enzymatic reactions when exposed to Earth-standard atmospheric conditions. However, recent advances in cryo-encapsulation and neuro-absorption protocols, developed by Neuralis BioForge (another Earth-based conglomerate), have rendered it both stable and scalable.</p>
+      <p>This milestone, while hailed as a triumph of interplanetary science, has ignited debate among observers critical of Earth’s colonial practices.</p>
+      <p>The Sutian Plague Variance—known among native populations as “Ash-Blood Fever”—has historically been exploited as both a biopolitical weapon and a mechanism of economic dependency. For generations, native populations across Sut’s fragmented empires have endured periodic outbreaks, with palliative "relief shipments" strategically distributed to maintain political leverage. Until now, no cure had been released for commercial or humanitarian use.</p>
+      <p>The sudden shift in policy is widely seen as driven by competitive market pressure from Thema and Oceinan biotech sectors, whose clandestine development programs had allegedly begun reverse-engineering the fungal genome.</p>
+      <p>Earth’s Prime Conglomerates now intend to monetize Virucerex across the multiverse, with projections indicating an initial licensing package targeting both planetary public-health agencies and private sector expansion zones. According to internal documents leaked from the Conglomerate Ethics Bureau, a single dose will retail at 1800 exchange credits—placing it well beyond the reach of most Sutian subjects, but well within procurement budgets of off-world administrations.</p>
+      <p>"Let’s not mistake this for altruism," said Jaen Li-Khara, an independent bioethics consultant formerly stationed in Thema. "This is disaster capital perfected. Sutian life remains cheap; what’s valuable now is Sutian biology."</p>
+      <p>Public reception on Earth has been muted, largely overshadowed by ongoing neural-union disputes and the release of the new ExoLex cognitive governance algorithm. On Sut, however, local reactions range from cautious optimism in colonial protectorates to unverified reports of mass unrest in free territories demanding immediate and unconditional distribution.</p>
+      <p>The Conglomerate's liaison office issued a formal statement this evening:</p>
+      <blockquote>"The release of Virucerex marks the dawn of a new era in colonial health diplomacy. We are proud to restore productivity to a key planetary partner."</blockquote>
+      <p>Whether Sutians themselves will benefit from the compound remains, as ever, a question subordinate to the needs of trade routes and extractive logistics.</p>
+    </article>
+  </main>
+
+    <footer>
+    © Occurrens Punctum – Defending Civilization Through Expansion
+    </footer>
+</body>

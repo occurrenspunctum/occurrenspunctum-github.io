@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Business | Occurrens Punctum</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="icon" href="../x-icon.png" type="image/png">
+</head>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const searchInput  = document.getElementById("search-input");
+  const searchButton = document.getElementById("search-button");
+
+  function doSearch() {
+    const query = searchInput.value.trim();
+    if (query) {
+      window.location.href = '../search.html?q=\${encodeURIComponent(query)}\'';
+    }
+  }
+
+  searchButton.addEventListener("click", doSearch);
+
+  searchInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      doSearch();
+    }
+  });
+
+  const toggleButton = document.getElementById("menu-toggle");
+  const mainNav = document.getElementById("main-nav");
+
+  toggleButton.addEventListener("click", () => {
+    mainNav.classList.toggle("show");
+  });
+});
+</script>
+
+<body>
+  <header>
+    <div class="header-flex">
+      <div class="logo-section">
+        <div><img src="../x-icon.png" class="logo-symbol"></div>
+        <h1><a href="../homepage.html">Occurrens Punctum</a> | Business</h1>
+      </div>
+
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </div>
+
+    <div class="nav-search-wrapper">
+    <nav id="main-nav" class="nav-menu">
+      <ul>
+        <li class="dropdown"><a href="../sections/science.html">Science</a></li>
+        <li class="dropdown"><a href="../sections/politics.html">Politics</a></li>
+        <li class="dropdown"><a href="../sections/business.html">Business</a></li>
+        <li class="dropdown"><a href="../sections/environment.html">Environment</a></li>
+        <li class="dropdown"><a href="../sections/culture.html">Culture</a></li>
+        <li class="dropdown"><a href="../sections/opinion.html">Opinion</a></li>
+        <li class="dropdown"><a href="../sections/archive.html">Archive</a></li>
+      </ul>
+    </nav>
+
+    <div class="search-bar">
+       <input type="text" id="search-input" placeholder="Search articles..." />
+       <button id="search-button">🔍</button>
+    </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="imageless-section">
+      <h2>Hel Fire as an Energy Resource</h2>
+      <div class="imageless-grid">
+        <article>
+            <a href="Hel Fire as an Energy Resource/Lava Riches Left Stranded Hel’s Molten Energy Promise Undermined by Transportation Woes.html"><h4>Lava Riches Left Stranded Hel’s Molten Energy Promise Undermined by Transportation Woes</h4></a>
+            <p>Hel’s vast lava flows could revolutionize its economy by slashing energy imports and opening export markets, but the lack of infrastructure to transport geothermal power leaves the planet’s molten wealth untapped.</p>
+        </article>
+
+        <article>
+            <a href="Hel Fire as an Energy Resource/Turkish Republic’s Volcanic Dream Mining Hel’s Lava for Power or Just Hot Air.html"><h4>Turkish Republic’s Volcanic Dream: Mining Hel’s Lava for Power or Just Hot Air?</h4></a>
+            <p>The Turkish Republic unveiled plans to harness Hel’s lava as an energy source, promising a new era of geothermal power. Combustion Preacher Sheikh Ishqar al-Ahram ridicules the idea as reckless, highlighting the dangers of Hel’s unpredictable magma and potential catastrophe for local colonies.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © Occurrens Punctum – Defending Civilization Through Expansion
+  </footer>
+</body>
+</html>

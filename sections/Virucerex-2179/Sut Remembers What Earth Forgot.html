@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Opinion | Sut Remembers What Earth Forgot | Occurrens Punctum</title>
+  <link rel="stylesheet" href="../../style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="icon" href="../../x-icon.png" type="image/png">
+</head>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const searchInput  = document.getElementById("search-input");
+  const searchButton = document.getElementById("search-button");
+
+  function doSearch() {
+    const query = searchInput.value.trim();
+    if (query) {
+      window.location.href = `../../search.html?q=${encodeURIComponent(query)}`;
+    }
+  }
+
+  // 🔍 Button click
+  searchButton.addEventListener("click", doSearch);
+
+  // ⏎  Enter key
+  searchInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();   // stop any default form action
+      doSearch();
+    }
+  });
+});
+</script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleButton = document.getElementById("menu-toggle");
+  const mainNav = document.getElementById("main-nav");
+
+  toggleButton.addEventListener("click", () => {
+    mainNav.classList.toggle("show");
+  });
+
+  // Enable subnav toggles on mobile
+  document.querySelectorAll("#main-nav > ul > li").forEach((item) => {
+    item.addEventListener("click", (e) => {
+      if (window.innerWidth <= 768) {
+        const dropdown = item.querySelector(".dropdown-content");
+        if (dropdown) {
+          e.preventDefault();
+          dropdown.classList.toggle("show");
+        }
+      }
+    });
+  });
+});
+</script>
+<body>
+  <header>
+    <div class="header-flex">
+      <div class="logo-section">
+        <div><img src="../../x-icon.png" class="logo-symbol"></div>
+        <h1><a href="../../homepage.html">Occurrens Punctum</a> | Opinion</h1>
+      </div>
+
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </div>
+
+    <div class="nav-search-wrapper">
+    <nav id="main-nav" class="nav-menu">
+      <ul>
+        <li class="dropdown"><a href="../../sections/science.html">Science</a></li>
+        <li class="dropdown"><a href="../../sections/politics.html">Politics</a></li>
+        <li class="dropdown"><a href="../../sections/business.html">Business</a></li>
+        <li class="dropdown"><a href="../../sections/environment.html">Environment</a></li>
+        <li class="dropdown"><a href="../../sections/culture.html">Culture</a></li>
+        <li class="dropdown"><a href="../../sections/opinion.html">Opinion</a></li>
+        <li class="dropdown"><a href="../../sections/archive.html">Archive</a></li>
+      </ul>
+    </nav>
+
+    <div class="search-bar">
+       <input type="text" id="search-input" placeholder="Search articles..." />
+       <button id="search-button">🔍</button>
+    </div>
+    </div>
+  </header>
+
+  <main class="article-main">
+    <article class="full-article">
+      <h1 class="article-title">Sut Remembers What Earth Forgot</h1>
+      <div class="article-meta">Callitra Nahom &bull; 24.12.2179</div>
+      <img src="../../images/Callitra Nahom.png" alt="Hero Image" class="article-hero"/>
+
+      <p>Memory is not data. It is not archived in chrome chambers or fed into consensus engines. Memory is a wound that speaks. A pattern that aches. A rhythm still breathing under centuries of silence.</p>
+      <p>I write this not to critique Earth’s newest marvel, Virucerex-2179, nor to validate its touted efficiency. The molecules do what they were engineered to do—interrupt cellular collapse, suspend the mechanisms of plague. So be it.</p>
+      <p>But this is not a pharmaceutical breakthrough.</p>
+      <p>It is a mnemonic fracture.</p>
+      <p>For those of us who trace ancestral memory as living infrastructure, as encoded spirit across bloodlines and soils, Sut is not simply a colonized planet—it is a palimpsest. Its sickness did not begin with bacteria, but with forgetting.</p>
+      <p>Earth forgets by design. Its corporate governance thrives on amnesia: the disbanding of origin, the burial of obligation, the atomization of every relational structure that once tethered humanity to its worlds. This forgetting is not passive. It is ritualized. Marketed. Rewarded.</p>
+      <p>But Sut remembers. Against plague. Against famine. Against erasure.</p>
+      <p>It remembers through grief dances whispered across decimated villages. Through chants sung into the last breaths of exiled midwives. Through glyphs carved into bark by children whose immune systems could not carry them to adulthood.</p>
+      <p>And now? That memory is being sold in doses. Traded in crates marked with Earth’s branding, delivered via orbital authority, offered not as justice, but as efficiency.</p>
+      <p>Virucerex was born of Sutian flora—fungal codes cultivated in soil mapped by ancestral firelines. Every genome contains a prayer. Every cure, a theft.</p>
+      <p>To the Divine Empire, memory is not nostalgic. It is tactical. Our archives do not store; they sharpen. We do not map history in years, but in betrayals. And what I see here—marketed as healing—is the latest betrayal wrapped in sterilized optimism.</p>
+      <p>If the Conglomerates had truly wished to atone, they would have offered Virucerex without license. They would have seeded it into Sut’s water supply, taught its synthesis to native chemists, built temples to the healers whose lifework they plagiarized in silence.</p>
+      <p>Instead, they offer subscription. As if Sutian lungs must now tithe to breathe.</p>
+      <p>Let this be recorded in the next cycle of memory: that the cure did not arrive too late. It arrived precisely when the market deemed it most profitable.</p>
+      <p>Earth counts efficiency. Sut counts the dead.</p>
+      <p>And I, Cartographer, will ensure that Sut’s next generation does not forget who drew the boundaries of this medicine, and who profited from every breath restored.</p>
+    </article>
+  </main>
+
+    <footer>
+    © Occurrens Punctum – Defending Civilization Through Expansion
+    </footer>
+</body>

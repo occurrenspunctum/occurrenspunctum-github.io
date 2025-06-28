@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News | Echo Vigil 2179 | Occurrens Punctum</title>
+  <link rel="stylesheet" href="../../style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="icon" href="../../x-icon.png" type="image/png">
+</head>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const searchInput  = document.getElementById("search-input");
+  const searchButton = document.getElementById("search-button");
+
+  function doSearch() {
+    const query = searchInput.value.trim();
+    if (query) {
+      window.location.href = `../../search.html?q=${encodeURIComponent(query)}`;
+    }
+  }
+
+  // 🔍 Button click
+  searchButton.addEventListener("click", doSearch);
+
+  // ⏎  Enter key
+  searchInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();   // stop any default form action
+      doSearch();
+    }
+  });
+});
+</script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleButton = document.getElementById("menu-toggle");
+  const mainNav = document.getElementById("main-nav");
+
+  toggleButton.addEventListener("click", () => {
+    mainNav.classList.toggle("show");
+  });
+
+  // Enable subnav toggles on mobile
+  document.querySelectorAll("#main-nav > ul > li").forEach((item) => {
+    item.addEventListener("click", (e) => {
+      if (window.innerWidth <= 768) {
+        const dropdown = item.querySelector(".dropdown-content");
+        if (dropdown) {
+          e.preventDefault();
+          dropdown.classList.toggle("show");
+        }
+      }
+    });
+  });
+});
+</script>
+<body>
+  <header>
+    <div class="header-flex">
+      <div class="logo-section">
+        <div><img src="../../x-icon.png" class="logo-symbol"></div>
+        <h1><a href="../../homepage.html">Occurrens Punctum</a> | News</h1>
+      </div>
+
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </div>
+
+    <div class="nav-search-wrapper">
+    <nav id="main-nav" class="nav-menu">
+      <ul>
+        <li class="dropdown"><a href="../../sections/science.html">Science</a></li>
+        <li class="dropdown"><a href="../../sections/politics.html">Politics</a></li>
+        <li class="dropdown"><a href="../../sections/business.html">Business</a></li>
+        <li class="dropdown"><a href="../../sections/environment.html">Environment</a></li>
+        <li class="dropdown"><a href="../../sections/culture.html">Culture</a></li>
+        <li class="dropdown"><a href="../../sections/opinion.html">Opinion</a></li>
+        <li class="dropdown"><a href="../../sections/archive.html">Archive</a></li>
+      </ul>
+    </nav>
+
+    <div class="search-bar">
+       <input type="text" id="search-input" placeholder="Search articles..." />
+       <button id="search-button">🔍</button>
+    </div>
+    </div>
+  </header>
+
+  <main class="article-main">
+    <article class="full-article">
+      <h1 class="article-title">“Echo Vigil” and the Audit of Memory: A Foreign Eye on Babel’s Ritual of Silence</h1>
+      <div class="article-meta">Arin Temel &bull; 21.12.2179</div>
+      <img src="../../images/Echo Vigil 2179.png" alt="Hero Image" class="article-hero"/>
+
+      <p>Beneath the fractured dusk of Babel’s twin spires, a crowd of pilgrims gathered in cloaks of gray and bone, their mouths bound in silk, their eyes staring skyward. It was the 137th recurrence of the Echo Vigil, a local rite that requires participants to spend 87 minutes in absolute silence—mirroring the supposed moment when the Babelic sky “last replied.” But this year, amid the incense haze and biometric fog, a foreign observer stood among them: myself, a state-licensed Interdimensional Efficiency Auditor from the Turkish Republic of Alem.</p>
+      <p>I came to assess Babel’s civic expenditure logics, as mandated under the Interference Clause of Treaty 7-A/OMEGA. I did not come for ritual. Yet there I stood, ear-linked to my translator node, watching as the city's power grids were dimmed, its info-kiosks turned to static, and even neural casts interrupted—for what I initially believed to be performance art. It wasn’t. It was Babel’s most sacred event.</p>
+      <p>The Vigil is said to commemorate a message once received from the “Upper Reaches,” a metaphysical and mytho-dimensional term for that which lies above Babel’s storm. According to local ecclesio-historians, the last intelligible signal—if such a thing ever truly existed—was a single auditory tone received 218 years ago during the fractal aurora. It is this tone that the citizens seek to echo, or perhaps to wait for in return.</p>
+      <p>My findings on Babel’s public systems are to be submitted through classified protocol. But what I witnessed during the Vigil resists categorization. It was not efficient—far from it. The city loses thousands of man-hours. Sensor relays are shut down. Economic throughput flatlines. Children are taken from schools and made to sit in stone amphitheatres, eyes closed, palms upward. Drones retreat. Algorithms idle. Babel, for a brief window, ceases to function.</p>
+      <p>Yet in that cessation, there is form.</p>
+      <p>The ritual is not a cry for return, nor a demand for meaning. It is a cultivated absence. An architecture of silence. A civic choice to become inoperative in reverence to an unknowable echo.</p>
+      <p>Some might call it primitive, or worse: wasteful. I do not.</p>
+      <p>The Turkish Republic taught us that steam and structure must serve the rational world. But in Babel, they have built a different kind of rationality—one where stillness is the civic act, and silence the highest efficiency.</p>
+      <p>As the Vigil ended, a woman beside me wept, not from grief, but from having remembered a frequency she could not name. I have nothing to report. Only to record.</p>
+    </article>
+  </main>
+
+    <footer>
+    © Occurrens Punctum – Defending Civilization Through Expansion
+    </footer>
+</body>

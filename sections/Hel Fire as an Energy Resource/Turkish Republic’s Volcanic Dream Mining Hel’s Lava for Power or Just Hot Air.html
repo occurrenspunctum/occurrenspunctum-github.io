@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News | Turkish Republic’s Volcanic Dream Mining Hel’s Lava for Power or Just Hot Air | Occurrens Punctum</title>
+  <link rel="stylesheet" href="../../style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="icon" href="../../x-icon.png" type="image/png">
+</head>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const searchInput  = document.getElementById("search-input");
+  const searchButton = document.getElementById("search-button");
+
+  function doSearch() {
+    const query = searchInput.value.trim();
+    if (query) {
+      window.location.href = `../../search.html?q=${encodeURIComponent(query)}`;
+    }
+  }
+
+  // 🔍 Button click
+  searchButton.addEventListener("click", doSearch);
+
+  // ⏎  Enter key
+  searchInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();   // stop any default form action
+      doSearch();
+    }
+  });
+});
+</script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleButton = document.getElementById("menu-toggle");
+  const mainNav = document.getElementById("main-nav");
+
+  toggleButton.addEventListener("click", () => {
+    mainNav.classList.toggle("show");
+  });
+
+  // Enable subnav toggles on mobile
+  document.querySelectorAll("#main-nav > ul > li").forEach((item) => {
+    item.addEventListener("click", (e) => {
+      if (window.innerWidth <= 768) {
+        const dropdown = item.querySelector(".dropdown-content");
+        if (dropdown) {
+          e.preventDefault();
+          dropdown.classList.toggle("show");
+        }
+      }
+    });
+  });
+});
+</script>
+<body>
+  <header>
+    <div class="header-flex">
+      <div class="logo-section">
+        <div><img src="../../x-icon.png" class="logo-symbol"></div>
+        <h1><a href="../../homepage.html">Occurrens Punctum</a> | News</h1>
+      </div>
+
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </div>
+
+    <div class="nav-search-wrapper">
+    <nav id="main-nav" class="nav-menu">
+      <ul>
+        <li class="dropdown"><a href="../../sections/science.html">Science</a></li>
+        <li class="dropdown"><a href="../../sections/politics.html">Politics</a></li>
+        <li class="dropdown"><a href="../../sections/business.html">Business</a></li>
+        <li class="dropdown"><a href="../../sections/environment.html">Environment</a></li>
+        <li class="dropdown"><a href="../../sections/culture.html">Culture</a></li>
+        <li class="dropdown"><a href="../../sections/opinion.html">Opinion</a></li>
+        <li class="dropdown"><a href="../../sections/archive.html">Archive</a></li>
+      </ul>
+    </nav>
+
+    <div class="search-bar">
+       <input type="text" id="search-input" placeholder="Search articles..." />
+       <button id="search-button">🔍</button>
+    </div>
+    </div>
+  </header>
+
+  <main class="article-main">
+    <article class="full-article">
+      <h1 class="article-title">Turkish Republic’s Volcanic Dream Mining Hel’s Lava for Power or Just Hot Air</h1>
+      <div class="article-meta">Sheikh Ishqar al-Ahram &bull; 22.12.2179</div>
+      <img src="../../images/Hel.png" alt="Hero Image" class="article-hero"/>
+
+     <p>In what many are already calling the boldest energy proposal of the century — or the most delusional — the Turkish Republic has unveiled plans to harness Hel’s churning lava flows as a revolutionary power source.</p>
+     <p>Standing on the obsidian shores of Lake Fumarole, Turkish officials spoke of a “new era of limitless energy” extracted from the planet’s fiery veins. “Hel’s lava is the key to a perpetual power cycle,” announced Dr. Sabiha Yıldırım, Minister of Unconventional Energy. “We will channel this molten gift to fuel our colonies for generations.”</p>
+     <p>As a humble Combustion Preacher from the Caliphate — where we worship the sun but know better than to dance in volcanoes — I find myself struggling to suppress both laughter and tears. Have our cousins in Ankara misplaced their thermometers? Lava, by its very nature, tends to erupt, flow, and incinerate — not gently boil water to spin turbines.</p>
+     <p>The Republic’s blueprint suggests an ambitious network of sub-crustal heat exchangers to capture thermal energy before it escapes to Hel’s noxious skies. Yet geologists whisper of Hel’s unpredictable lava tides — capable of surging without warning — and the corrosive plumes that have already devoured countless prospecting drones.</p>
+     <p>Investors remain split. Shares of Istanbul Energy rose 2% on the announcement, driven by speculators dreaming of Hel’s geothermal bounty. But many financial analysts warn of “Molten Bubble Mania” — a hype-fueled spiral eerily reminiscent of the early 22nd-century asteroid helium rush.</p>
+     <p>Meanwhile, citizens in Hel’s domed settlements express concern. “We worry they’ll poke a hole in the crust and flood our homes with magma,” said Qasim Benali, a local engineer. “It’s one thing to live next to a volcano. It’s another when your government wants to plug a straw into it.”</p>
+     <p>Time will tell if Rome's volcanic ambitions are a stroke of geothermal genius — or if, like I suspect, they’ll become a cautionary tale of a civilization so desperate for energy it tried to bottle a planet’s wrath.</p>
+     <p>Until then, I pray for those brave souls who must stand near Hel’s infernal rivers and listen to ministers promising paradise at 1200 degrees Kalvan.</p>
+    </article>
+  </main>
+
+    <footer>
+    © Occurrens Punctum – Defending Civilization Through Expansion
+    </footer>
+</body>

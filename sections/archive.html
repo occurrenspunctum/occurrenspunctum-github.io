@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Archive | Occurrens Punctum</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="icon" href="../x-icon.png" type="image/png">
+</head>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const searchInput  = document.getElementById("search-input");
+  const searchButton = document.getElementById("search-button");
+
+  function doSearch() {
+    const query = searchInput.value.trim();
+    if (query) {
+      window.location.href = '../search.html?q=\${encodeURIComponent(query)}\'';
+    }
+  }
+
+  searchButton.addEventListener("click", doSearch);
+
+  searchInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      doSearch();
+    }
+  });
+
+  const toggleButton = document.getElementById("menu-toggle");
+  const mainNav = document.getElementById("main-nav");
+
+  toggleButton.addEventListener("click", () => {
+    mainNav.classList.toggle("show");
+  });
+});
+</script>
+
+<body>
+  <header>
+    <div class="header-flex">
+      <div class="logo-section">
+        <div><img src="../x-icon.png" class="logo-symbol"></div>
+        <h1><a href="../homepage.html">Occurrens Punctum</a> | Archive</h1>
+      </div>
+
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </div>
+
+    <div class="nav-search-wrapper">
+    <nav id="main-nav" class="nav-menu">
+      <ul>
+        <li class="dropdown"><a href="../sections/science.html">Science</a></li>
+        <li class="dropdown"><a href="../sections/politics.html">Politics</a></li>
+        <li class="dropdown"><a href="../sections/business.html">Business</a></li>
+        <li class="dropdown"><a href="../sections/environment.html">Environment</a></li>
+        <li class="dropdown"><a href="../sections/culture.html">Culture</a></li>
+        <li class="dropdown"><a href="../sections/opinion.html">Opinion</a></li>
+        <li class="dropdown"><a href="../sections/archive.html">Archive</a></li>
+      </ul>
+    </nav>
+
+    <div class="search-bar">
+       <input type="text" id="search-input" placeholder="Search articles..." />
+       <button id="search-button">🔍</button>
+    </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="imageless-section">
+      <h2>Echo Vigil</h2>
+      <div class="imageless-grid">
+        <article>
+            <a href="Echo Vigil/Echo Vigil 2179.html"><h4>“Echo Vigil” and the Audit of Memory: A Foreign Eye on Babel’s Ritual of Silence</h4></a>
+            <div class="article-meta">
+              <span class="article-date">21.12.2179</span> &nbsp;&bull;&nbsp;
+              <span class="article-author">Arin Temel</span> &nbsp;&bull;&nbsp;
+              <span class="article-author">News</span>
+            </div>
+            <p>A Turkish Efficiency Auditor from Alem reflects on Babel’s most sacred civic ritual, the Echo Vigil, where citizens collectively enter a state of ritual silence in memory of a mythical cosmic reply. Though economically irrational, the Vigil reveals an alternative logic of reverence and stillness.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="imageless-section">
+      <h2>Virucerex-2179</h2>
+      <div class="imageless-grid">
+        <article>
+            <a href="Virucerex-2179/Virucerex-2179.html"><h4>Commercial Cure Emerges from Colonial Crisis: Sutian Plague Breakthrough Approved</h4></a>
+            <div class="article-meta">
+              <span class="article-date">21.12.2179</span> &nbsp;&bull;&nbsp;
+              <span class="article-author">Naila Trenholm</span> &nbsp;&bull;&nbsp;
+              <span class="article-author">News</span>
+            </div>
+            <p>TrinaNova Medical Industries has announced the approval of Virucerex-2179, the first commercially viable cure for the Sutian Plague Variance. Derived from native fungal strains and stabilized using Earth-based biotech, the medicine is set to enter multiversal markets despite controversy over its pricing and the colonial dynamics behind its development.</p>
+        </article>
+
+        <article>
+            <a href="Virucerex-2179/Virucerex-2179 Is Not a Cure. It Is a Claim.html"><h4>Virucerex-2179 Is Not a Cure. It Is a Claim.</h4></a>
+            <div class="article-meta">
+              <span class="article-date">23.12.2179</span> &nbsp;&bull;&nbsp;
+              <span class="article-author">Ashir ibn Nawfal</span> &nbsp;&bull;&nbsp;
+              <span class="article-author">Opinion</span>
+            </div>
+            <p>Ashir ibn Nawfal, Geo-Prophet of Expansion from the Caliphate, warns that Earth’s newly released Virucerex-2179 is not a humanitarian breakthrough, but a mechanism of planetary control. In this searing critique, he argues that medical dependency has replaced military conquest as the dominant tool of colonial governance, urging Sutians to reject biochemical servitude in favor of sovereignty.</p>
+        </article>
+
+        <article>
+            <a href="Virucerex-2179/Sut Remembers What Earth Forgot.html"><h4>Sut Remembers What Earth Forgot</h4></a>
+            <div class="article-meta">
+              <span class="article-date">24.12.2179</span> &nbsp;&bull;&nbsp;
+              <span class="article-author">Callitra Nahom</span> &nbsp;&bull;&nbsp;
+              <span class="article-author">Opinion</span>
+            </div>
+            <p>Ancestral Memory Cartographer Mx. Callitra Nahom argues that the release of Virucerex-2179 represents not a gesture of planetary healing, but a disruption of Sut’s inherited memory. In this lyrical reflection, they trace how the commodification of biomedicine continues Earth’s long tradition of strategic forgetting, and call for remembrance as resistance.</p>
+        </article>
+
+        <article>
+            <a href="Virucerex-2179/This Is Not a Rescue. It’s a Refinement..html"><h4>This Is Not a Rescue. It’s a Refinement</h4></a>
+            <div class="article-meta">
+              <span class="article-date">25.12.2179</span> &nbsp;&bull;&nbsp;
+              <span class="article-author">Arın Temel</span> &nbsp;&bull;&nbsp;
+              <span class="article-author">Opinion</span>
+            </div>
+            <p>In a sharp critique of Earth’s pharmaceutical colonialism, Arın Temel argues that Virucerex-2179 was never meant to liberate Sut from the plague, but to refine planetary dependency through biotech governance. Citing supply chain control, pricing strategy, and historical precedent, Temel warns that this 'cure' represents a deeper, systemic occupation masked as mercy.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="imageless-section">
+      <h2>Kustuomi Ice Melting</h2>
+      <div class="imageless-grid">
+        <article>
+            <a href="Kustuomi Ice Melting/Caliphate’s Calculated Triumph as Kustuomi’s Ice Sheet Retreats.html"><h4>Caliphate’s Calculated Triumph as Kustuomi’s Ice Sheet Retreats</h4></a>
+            <div class="article-meta">
+              <span class="article-date">21.12.2179</span> &nbsp;&bull;&nbsp;
+              <span class="article-author">Ashir ibn Nawfal</span> &nbsp;&bull;&nbsp;
+              <span class="article-author">News</span>
+            </div>
+            <p>Kustuomi’s ice sheet has receded by 17 percent, exposing new lands under the Caliphate’s climate intervention program. Geo-Messenger Ashir ibn Nawfal hails the event as a strategic victory, though scientists warn of ecological disruption and rising seas.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="imageless-section">
+      <h2>Conclave in Eternal Roman Empireg</h2>
+      <div class="imageless-grid">
+        <article>
+            <a href="Conclave in Eternal Roman Empire/Conclave 2179.html"><h4>Shadows of Incense: The Eternal Roman Empire of Sut Chooses a New Pontif</h4></a>
+            <div class="article-meta">
+              <span class="article-date">22.12.2179</span> &nbsp;&bull;&nbsp;
+              <span class="article-author">Arın Temel</span> &nbsp;&bull;&nbsp;
+              <span class="article-author">News</span>
+            </div>
+            <p>Cardinal Aurelius Vanto has been elected as Urban IX, the new pope of the Eternal Roman Empire of Sut, after a tense conclave. His moderate stance aims to stabilize the empire after years of factional conflict, while foreign powers watch Sut’s next moves closely.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="imageless-section">
+      <h2>Hel Fire as an Energy Resource</h2>
+      <div class="imageless-grid">
+        <article>
+            <a href="Hel Fire as an Energy Resource/Lava Riches Left Stranded Hel’s Molten Energy Promise Undermined by Transportation Woes.html"><h4>Caliphate’s Calculated Triumph as Kustuomi’s Ice Sheet Retreats</h4></a>
+            <div class="article-meta">
+              <span class="article-date">21.12.2179</span> &nbsp;&bull;&nbsp;
+              <span class="article-author">Feride Hançerli</span> &nbsp;&bull;&nbsp;
+              <span class="article-author">News</span>
+            </div>
+            <p>Hel’s vast lava flows could revolutionize its economy by slashing energy imports and opening export markets, but the lack of infrastructure to transport geothermal power leaves the planet’s molten wealth untapped.</p>
+        </article>
+
+        <article>
+            <a href="Hel Fire as an Energy Resource/Turkish Republic’s Volcanic Dream Mining Hel’s Lava for Power or Just Hot Air.html"><h4>Turkish Republic’s Volcanic Dream: Mining Hel’s Lava for Power or Just Hot Air?</h4></a>
+            <div class="article-meta">
+              <span class="article-date">22.12.2179</span> &nbsp;&bull;&nbsp;
+              <span class="article-author">Sheikh Ishqar al-Ahram</span> &nbsp;&bull;&nbsp;
+              <span class="article-author">News</span>
+            </div>
+            <p>The Turkish Republic unveiled plans to harness Hel’s lava as an energy source, promising a new era of geothermal power. Combustion Preacher Sheikh Ishqar al-Ahram ridicules the idea as reckless, highlighting the dangers of Hel’s unpredictable magma and potential catastrophe for local colonies.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © Occurrens Punctum – Defending Civilization Through Expansion
+  </footer>
+</body>
+</html>
