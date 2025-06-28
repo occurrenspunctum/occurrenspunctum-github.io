@@ -339,4 +339,9 @@ footer {
   .story-text {
     margin-top: 10px;
   }
+
+  .featured-grid {
+    flex-direction: column;  /* 👈 Add this line */
+  }
 }
+
