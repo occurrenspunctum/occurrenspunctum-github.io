@@ -217,6 +217,10 @@ nav ul li a {
   .imageless-grid {
     grid-template-columns: 1fr; /* stack in single column */
   }
+
+  .featured-grid {
+    flex-direction: column;  /* 👈 Add this line */
+  }
 }
 
 /* ===== ARTICLE PAGE ===== */
