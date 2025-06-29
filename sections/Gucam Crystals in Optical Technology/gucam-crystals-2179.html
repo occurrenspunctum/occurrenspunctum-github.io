@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News | Optical Horizons: Gucam Crystals Spark Race in Quantum Processing | Occurrens Punctum</title>
+  <link rel="stylesheet" href="../../style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="icon" href="../../x-icon.png" type="image/png">
+</head>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const searchInput  = document.getElementById("search-input");
+  const searchButton = document.getElementById("search-button");
+
+  function doSearch() {
+    const query = searchInput.value.trim();
+    if (query) {
+      window.location.href = `../../search.html?q=${encodeURIComponent(query)}`;
+    }
+  }
+
+  // 🔍 Button click
+  searchButton.addEventListener("click", doSearch);
+
+  // ⏎  Enter key
+  searchInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();   // stop any default form action
+      doSearch();
+    }
+  });
+});
+</script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleButton = document.getElementById("menu-toggle");
+  const mainNav = document.getElementById("main-nav");
+
+  toggleButton.addEventListener("click", () => {
+    mainNav.classList.toggle("show");
+  });
+
+  // Enable subnav toggles on mobile
+  document.querySelectorAll("#main-nav > ul > li").forEach((item) => {
+    item.addEventListener("click", (e) => {
+      if (window.innerWidth <= 768) {
+        const dropdown = item.querySelector(".dropdown-content");
+        if (dropdown) {
+          e.preventDefault();
+          dropdown.classList.toggle("show");
+        }
+      }
+    });
+  });
+});
+</script>
+<body>
+  <header>
+    <div class="header-flex">
+      <div class="logo-section">
+        <div><img src="../../x-icon.png" class="logo-symbol"></div>
+        <h1><a href="../../homepage.html">Occurrens Punctum</a> | News</h1>
+      </div>
+
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </div>
+
+    <div class="nav-search-wrapper">
+    <nav id="main-nav" class="nav-menu">
+      <ul>
+        <li class="dropdown"><a href="../../sections/science.html">Science</a></li>
+        <li class="dropdown"><a href="../../sections/politics.html">Politics</a></li>
+        <li class="dropdown"><a href="../../sections/business.html">Business</a></li>
+        <li class="dropdown"><a href="../../sections/environment.html">Environment</a></li>
+        <li class="dropdown"><a href="../../sections/culture.html">Culture</a></li>
+        <li class="dropdown"><a href="../../sections/opinion.html">Opinion</a></li>
+        <li class="dropdown"><a href="../../sections/archive.html">Archive</a></li>
+      </ul>
+    </nav>
+
+    <div class="search-bar">
+       <input type="text" id="search-input" placeholder="Search articles..." />
+       <button id="search-button">🔍</button>
+    </div>
+    </div>
+  </header>
+
+  <main class="article-main">
+    <article class="full-article">
+      <h1 class="article-title">Optical Horizons: Gucam Crystals Spark Race in Quantum Processing</h1>
+      <div class="article-meta">Naila Trenholm &bull; 22.12.2179</div>
+      <img src="../../images/Gucam Crystals.png" alt="Hero Image" class="article-hero"/>
+
+      <p>In the uninhabited expanse of Gucam—a silent, sun-blasted world whose crystalline fields shimmer untouched—a scientific breakthrough is sending shockwaves through the interstellar business community. Unique formations known as “Gucam Crystalls” are demonstrating extraordinary potential for revolutionizing optical data processing, according to new reports from Earth-based research consortiums granted orbital survey access.</p>      
+      <p>Initial lab analyses of remotely collected crystal samples show unprecedented refractive stability and photon coherence, enabling fourfold increases in optical data throughput compared to conventional silica-based processors. “It’s as though these structures were engineered by nature to channel light flawlessly,” said Dr. Mariette Solano of the Earth Quantum Applications Consortium, whose team has been studying the crystals aboard the research ship Ardent Inquiry.</p>
+      <p>Corporate behemoths, including Earth’s VaydaTech and Alem’s SteamSignal Industries, have already begun negotiations for exclusive mining rights with colonial authorities overseeing uninhabited planetary resources. Industry analysts estimate that scalable production of Gucam-based optical substrates could transform the 2.6-trillion-credit optical processor market within a decade.</p>
+      <p>Yet the planet’s barren silence belies a looming geopolitical contest: rival prospecting fleets have begun shadowing each other in orbit, with at least two skirmishes reported in Gucam’s upper atmosphere over disputed landing coordinates. While there are no native populations at stake, the scramble for control over Gucam’s crystalline wealth threatens to become a flashpoint for broader interplanetary tensions.</p>
+      <p>For now, Gucam’s gleaming fields lie undisturbed beneath alien skies—offering the promise of a quantum revolution, but casting the long shadow of conflict.</p>
+
+    </article>
+  </main>
+
+    <footer>
+    © Occurrens Punctum – Defending Civilization Through Expansion
+    </footer>
+</body>
