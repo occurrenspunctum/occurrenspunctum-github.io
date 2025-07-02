@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News | H$$ Hyper-Speed Sail Race Ignites Ka-Ga’s Corporate Sease | Occurrens Punctum</title>
+  <link rel="stylesheet" href="../../style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="icon" href="../../x-icon.png" type="image/png">
+</head>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const searchInput  = document.getElementById("search-input");
+  const searchButton = document.getElementById("search-button");
+
+  function doSearch() {
+    const query = searchInput.value.trim();
+    if (query) {
+      window.location.href = `../../search.html?q=${encodeURIComponent(query)}`;
+    }
+  }
+
+  // 🔍 Button click
+  searchButton.addEventListener("click", doSearch);
+
+  // ⏎  Enter key
+  searchInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();   // stop any default form action
+      doSearch();
+    }
+  });
+});
+</script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleButton = document.getElementById("menu-toggle");
+  const mainNav = document.getElementById("main-nav");
+
+  toggleButton.addEventListener("click", () => {
+    mainNav.classList.toggle("show");
+  });
+
+  // Enable subnav toggles on mobile
+  document.querySelectorAll("#main-nav > ul > li").forEach((item) => {
+    item.addEventListener("click", (e) => {
+      if (window.innerWidth <= 768) {
+        const dropdown = item.querySelector(".dropdown-content");
+        if (dropdown) {
+          e.preventDefault();
+          dropdown.classList.toggle("show");
+        }
+      }
+    });
+  });
+});
+</script>
+<body>
+  <header>
+    <div class="header-flex">
+      <div class="logo-section">
+        <div><img src="../../x-icon.png" class="logo-symbol"></div>
+        <h1><a href="../../index.html">Occurrens Punctum</a> | News</h1>
+      </div>
+
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </div>
+
+    <div class="nav-search-wrapper">
+    <nav id="main-nav" class="nav-menu">
+      <ul>
+        <li class="dropdown"><a href="../../sections/science.html">Science</a></li>
+        <li class="dropdown"><a href="../../sections/politics.html">Politics</a></li>
+        <li class="dropdown"><a href="../../sections/business.html">Business</a></li>
+        <li class="dropdown"><a href="../../sections/environment.html">Environment</a></li>
+        <li class="dropdown"><a href="../../sections/culture.html">Culture</a></li>
+        <li class="dropdown"><a href="../../sections/opinion.html">Opinion</a></li>
+        <li class="dropdown"><a href="../../sections/archive.html">Archive</a></li>
+      </ul>
+    </nav>
+
+    <div class="search-bar">
+       <input type="text" id="search-input" placeholder="Search articles..." />
+       <button id="search-button">🔍</button>
+    </div>
+    </div>
+  </header>
+
+  <main class="article-main">
+    <article class="full-article">
+      <h1 class="article-title">H$$ Hyper-Speed Sail Race Ignites Ka-Ga’s Corporate Seas</h1>
+      <div class="article-meta">Luan Torress &bull; 21.12.2179</div>
+      <img src="../../images/H$$-2179.png" alt="Hero Image" class="article-hero"/>
+
+      <p>Amid the churning waves and storm-forged skies of Ka-Ga, the world’s most audacious spectacle unfolded this week as the annual H$$ Hyper-Speed Sail Race pitted Earth’s elite Corporate Seas teams against each other in a brutal ballet of wind, foil, and fire. In a contest merging maritime tradition with bleeding-edge engineering, sleek monohull foils—each bristling with AI-assisted sail rigs and plasma-stabilized keels—sliced across the storm-lashed waters at velocities rivaling orbital landers.</p>
+      <p>The event drew millions of remote spectators from across the Convergence multiverse, with betting markets from Neo-Europe to Kustuomi surging into record volumes. But for Ka-Ga’s floating archipelagos and sea-fortresses, H$$ is more than mere entertainment: it’s a reaffirmation of corporate dominion over the oceanic frontier and a proving ground for technologies soon to be deployed in everything from high-risk resource extraction to naval security.</p>
+      <p>Team Blackwake, sponsored by the Albrecht Consortium, claimed the crown after a treacherous six-hour duel that saw three rival vessels capsize in hurricane-force squalls. Their flagship, The Merciless Ledger, clocked a peak speed of 327 knots before crossing the final buoy—an achievement leaving hardened sea captains awestruck and Ka-Ga’s pirate enclaves hailing the crew as living legends.</p>
+      <p>Other notable competitors included Team Tempest-Sable, backed by the Azimuth Syndicate, whose Iron Gale was forced to retire after a catastrophic foil fracture; Team Platinum Wave, representing the Halloran Combine, whose Gilded Serpent dominated early heats before a rogue wave shredded its adaptive sails; and Team Deepwater Eclipse, an upstart alliance of rogue engineers whose Night’s Embrace shocked commentators by holding second place until an electrical fire disabled its onboard AI.</p>
+      <p>Behind the spectacle lies a labyrinth of economic and political stakes. Corporations treat these races as live-fire testing arenas, fine-tuning AI-guided sail configurations, atmospheric prediction systems, and reinforcement alloys designed for hyperdynamic stress. Sources close to the organizers revealed that at least two megacorporations had field agents embedded with teams, gathering data to refine deep-sea mining platforms and high-speed smuggling interceptors.</p>
+      <p>Yet the races also stir Ka-Ga’s own restive factions. Clan emissaries from the Drowned Maw Cartel attended the championship, reportedly negotiating clandestine contracts for obsolete racing tech—a move that could disrupt Ka-Ga’s delicate balance between rogue fleets and their corporate patrons.</p>
+      <p>Speaking after his crew’s victory, Captain Emerik Solano of Team Blackwake declared: “This is what Ka-Ga was born for: to ride chaos and master it. No sea too wild, no storm too fierce.”</p>
+      <p>As the victors sail triumphantly into Ka-Ga’s tempestuous night, one thing is clear: H$$ has secured its place as the ocean world’s defining cultural obsession—and a mirror reflecting both the ruthless ambition and fragile alliances of Earth’s corporate dominion.</p>
+    </article>
+  </main>
+
+    <footer>
+    © Occurrens Punctum – Defending Civilization Through Expansion
+    </footer>
+</body>

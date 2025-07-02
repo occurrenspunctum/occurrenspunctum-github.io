@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Opinion | H$$—Ka-Ga’s Dance of Storm and Steel Through a Kastramungan Eye | Occurrens Punctum</title>
+  <link rel="stylesheet" href="../../style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="icon" href="../../x-icon.png" type="image/png">
+</head>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const searchInput  = document.getElementById("search-input");
+  const searchButton = document.getElementById("search-button");
+
+  function doSearch() {
+    const query = searchInput.value.trim();
+    if (query) {
+      window.location.href = `../../search.html?q=${encodeURIComponent(query)}`;
+    }
+  }
+
+  // 🔍 Button click
+  searchButton.addEventListener("click", doSearch);
+
+  // ⏎  Enter key
+  searchInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();   // stop any default form action
+      doSearch();
+    }
+  });
+});
+</script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleButton = document.getElementById("menu-toggle");
+  const mainNav = document.getElementById("main-nav");
+
+  toggleButton.addEventListener("click", () => {
+    mainNav.classList.toggle("show");
+  });
+
+  // Enable subnav toggles on mobile
+  document.querySelectorAll("#main-nav > ul > li").forEach((item) => {
+    item.addEventListener("click", (e) => {
+      if (window.innerWidth <= 768) {
+        const dropdown = item.querySelector(".dropdown-content");
+        if (dropdown) {
+          e.preventDefault();
+          dropdown.classList.toggle("show");
+        }
+      }
+    });
+  });
+});
+</script>
+
+<body>
+  <header>
+    <div class="header-flex">
+      <div class="logo-section">
+        <div><img src="../../x-icon.png" class="logo-symbol"></div>
+        <h1><a href="../../index.html">Occurrens Punctum</a> | Opinion</h1>
+      </div>
+
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </div>
+
+    <div class="nav-search-wrapper">
+    <nav id="main-nav" class="nav-menu">
+      <ul>
+        <li class="dropdown"><a href="../../sections/science.html">Science</a></li>
+        <li class="dropdown"><a href="../../sections/politics.html">Politics</a></li>
+        <li class="dropdown"><a href="../../sections/business.html">Business</a></li>
+        <li class="dropdown"><a href="../../sections/environment.html">Environment</a></li>
+        <li class="dropdown"><a href="../../sections/culture.html">Culture</a></li>
+        <li class="dropdown"><a href="../../sections/opinion.html">Opinion</a></li>
+        <li class="dropdown"><a href="../../sections/archive.html">Archive</a></li>
+      </ul>
+    </nav>
+
+    <div class="search-bar">
+       <input type="text" id="search-input" placeholder="Search articles..." />
+       <button id="search-button">🔍</button>
+    </div>
+    </div>
+  </header>
+
+  <main class="article-main">
+    <article class="full-article">
+      <h1 class="article-title">H$$—Ka-Ga’s Dance of Storm and Steel Through a Kastramungan Eye</h1>
+      <div class="article-meta">Hadrin Vaelor &bull; 23.12.2179</div>
+      <img src="../../images/Hadrin Vaelor.png" alt="Hero Image" class="article-hero"/>
+
+      <p>Standing in the wind-battered terraces of Kastramunga, I have seen duels fought with thunder-hammers and avalanches summoned by song. Yet the H$$ Hyper-Speed Sail Race of Ka-Ga eclipses even our storm-fortresses for sheer audacity: a contest where mortals dare to harness oceans as titanic and merciless as our own mountains.</p>
+      <p>To Kastramungans, the spectacle of these hydrofoil blades carving crescents of boiling spray feels like a symphony of controlled catastrophe. Every shift of sail and explosive lurch from wave to sky mirrors the dances of our skykites across the abyss, where mastery of the elements is not sport—but survival.</p>
+      <p>The crews’ precision, pushing craft beyond known engineering thresholds, reveals a cultural truth: Ka-Ga’s sea-lords and Earth’s conglomerates share our reverence for chaos tamed through artifice. But unlike our peaks, where alliances are etched in stone and songs bind generations, the H$$ flaunts a different ethic—loyalty rented by the highest bidder, victory weighed in contracts and corporate stock.</p>
+      <p>And yet, as Team Blackwake’s Merciless Ledger thundered over the final buoy, even the most cynical terrace-dwellers among us found ourselves whispering that ancient prayer to the winds: that courage such as theirs does not come cheap—and should never be wasted.</p>
+      <p>Ka-Ga’s H$$ race proves that whether upon storm-choked seas or sulfurous ridgelines, the Convergence’s most enduring stories are born in the howl of nature defied—and the hush that follows.</p>
+    </article>
+  </main>
+
+    <footer>
+    © Occurrens Punctum – Defending Civilization Through Expansion
+    </footer>
+</body>

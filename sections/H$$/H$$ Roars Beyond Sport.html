@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Opinion | H$$ Roars Beyond Sport—It’s a Manifesto of Corporate Will | Occurrens Punctum</title>
+  <link rel="stylesheet" href="../../style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="icon" href="../../x-icon.png" type="image/png">
+</head>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const searchInput  = document.getElementById("search-input");
+  const searchButton = document.getElementById("search-button");
+
+  function doSearch() {
+    const query = searchInput.value.trim();
+    if (query) {
+      window.location.href = `../../search.html?q=${encodeURIComponent(query)}`;
+    }
+  }
+
+  // 🔍 Button click
+  searchButton.addEventListener("click", doSearch);
+
+  // ⏎  Enter key
+  searchInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();   // stop any default form action
+      doSearch();
+    }
+  });
+});
+</script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleButton = document.getElementById("menu-toggle");
+  const mainNav = document.getElementById("main-nav");
+
+  toggleButton.addEventListener("click", () => {
+    mainNav.classList.toggle("show");
+  });
+
+  // Enable subnav toggles on mobile
+  document.querySelectorAll("#main-nav > ul > li").forEach((item) => {
+    item.addEventListener("click", (e) => {
+      if (window.innerWidth <= 768) {
+        const dropdown = item.querySelector(".dropdown-content");
+        if (dropdown) {
+          e.preventDefault();
+          dropdown.classList.toggle("show");
+        }
+      }
+    });
+  });
+});
+</script>
+<body>
+  <header>
+    <div class="header-flex">
+      <div class="logo-section">
+        <div><img src="../../x-icon.png" class="logo-symbol"></div>
+        <h1><a href="../../index.html">Occurrens Punctum</a> | Opinion</h1>
+      </div>
+
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </div>
+
+    <div class="nav-search-wrapper">
+    <nav id="main-nav" class="nav-menu">
+      <ul>
+        <li class="dropdown"><a href="../../sections/science.html">Science</a></li>
+        <li class="dropdown"><a href="../../sections/politics.html">Politics</a></li>
+        <li class="dropdown"><a href="../../sections/business.html">Business</a></li>
+        <li class="dropdown"><a href="../../sections/environment.html">Environment</a></li>
+        <li class="dropdown"><a href="../../sections/culture.html">Culture</a></li>
+        <li class="dropdown"><a href="../../sections/opinion.html">Opinion</a></li>
+        <li class="dropdown"><a href="../../sections/archive.html">Archive</a></li>
+      </ul>
+    </nav>
+
+    <div class="search-bar">
+       <input type="text" id="search-input" placeholder="Search articles..." />
+       <button id="search-button">🔍</button>
+    </div>
+    </div>
+  </header>
+
+  <main class="article-main">
+    <article class="full-article">
+      <h1 class="article-title">H$$ Roars Beyond Sport—It’s a Manifesto of Corporate Will</h1>
+      <div class="article-meta">Luan Torress &bull; 21.12.2179</div>
+      <img src="../../images/Luan Torress.png" alt="Hero Image" class="article-hero"/>
+
+      <p>The final storm surge of the H$$ Hyper-Speed Sail Race left more than seafoam and shattered carbon-keels in its wake—it exposed the unvarnished heart of Ka-Ga’s maritime obsession. Where else in the Convergence does raw elemental fury meet the clinical precision of AI-rigged hydrofoils, each crewmember’s heartbeat synced to predictive wind matrices?</p>
+      <p>For all the flash of neon rigging and the millions of credits poured into composite hulls, the 2179 race laid bare the race’s true stakes: not who wins the trophy, but who proves their mastery of chaos. Team Blackwake’s Merciless Ledger dominated headlines with its blistering speeds, yet it was the sheer audacity of Team Deepwater Eclipse—charging into hurricane walls with experimental stabilizers—that defined the spirit of this year’s contest.</p>
+      <p>Every jibe and crash reminded us the H$$ is not a quaint regatta; it’s an ideological arms race. A platform where corporate navies perfect storm-piercing hulls for future conquests. A rolling stage where emissaries from pirate clans measure their worth against Earth’s juggernauts. And above all, a cultural monolith that keeps Ka-Ga’s volatile alliances afloat—sometimes literally.</p>
+      <p>Critics will wring their hands over the shattered boats and injured crews, calling H$$ an obscene gamble. But that’s the price of dancing at the edge of the impossible. This is Ka-Ga: a place where the sea, the storm, and the syndicates demand no less than courage born of desperation—and brilliance sharp enough to cut through the darkest squall.</p>
+      <p>So let the H$$ roar beyond sport. Let it be a manifesto of corporate will, a testament to the audacity of those who dare to ride the storm. Because in the end, it’s not just about who crosses the finish line first—it’s about who dares to challenge the very nature of the sea itself.</p>
+    </article>
+  </main>
+
+    <footer>
+    © Occurrens Punctum – Defending Civilization Through Expansion
+    </footer>
+</body>

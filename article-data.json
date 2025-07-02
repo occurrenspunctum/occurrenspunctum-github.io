@@ -1,5 +1,99 @@
 [
   {
+  "id": "cul-2179-hss-ka-ga",
+  "type": "News",
+  "link": "sections/H$$/H$$-2179.html",
+  "title": "Oceanic Fury: H$$ Hyper-Speed Sail Race Ignites Ka-Ga’s Corporate Seas",
+  "journalist": "Luan Torress",
+  "date": "21.12.2179",
+  "location": "Ka-Ga",
+  "section": "Culture",
+  "tags": [
+    "Ka-Ga",
+    "Luan Torress",
+    "Hyper-Speed Sail",
+    "H$$",
+    "Corporate Seas",
+    "Maritime Culture",
+    "Team Blackwake",
+    "Team Tempest-Sable",
+    "Team Platinum Wave",
+    "Team Deepwater Eclipse"
+  ],
+  "summary": "The annual H$$ Hyper-Speed Sail Race brought Ka-Ga’s stormy seas to life as elite teams from Earth’s Corporate Seas competed in a high-stakes maritime showdown. Team Blackwake claimed victory in a grueling contest marked by capsize, sabotage, and technological brinksmanship, solidifying H$$ as Ka-Ga’s defining cultural obsession and a stage for corporate ambitions on the oceanic frontier."
+},
+
+{
+  "id": "cul-2179-hss-commentary",
+  "type": "Commentary",
+  "link": "sections/H$$/H$$ Roard Beyond Sport.html",
+  "title": "H$$ Roars Beyond Sport—It’s a Manifesto of Corporate Will",
+  "journalist": "Luan Torress",
+  "date": "21.12.2179",
+  "location": "Ka-Ga",
+  "section": "Culture",
+  "tags": [
+    "Ka-Ga",
+    "Luan Torress",
+    "H$$",
+    "Hyper-Speed Sail",
+    "Race Commentary",
+    "Corporate Culture",
+    "Maritime Warfare",
+    "Team Blackwake",
+    "Team Deepwater Eclipse"
+  ],
+  "summary": "In a searing commentary, Luan Torress argues that the H$$ Hyper-Speed Sail Race is more than a contest of speed; it is a ritual of control where Earth’s corporate fleets and Ka-Ga’s rogue clans test their mastery over chaos. Every capsize and triumph reveals the deeper stakes: a battleground for technology, alliances, and cultural supremacy on the storm-forged seas."
+},
+
+{
+  "id": "cul-2179-hss-technical",
+  "type": "Commentary",
+  "link": "sections/H$$/H$$ Exposes the Limits of Current Hydrofoil Design.html",
+  "title": "H$$ Exposes the Limits of Current Hydrofoil Design",
+  "journalist": "Ketara Xiang",
+  "date": "21.12.2179",
+  "location": "Ka-Ga",
+  "section": "Culture",
+  "tags": [
+    "Ka-Ga",
+    "Ketara Xiang",
+    "H$$",
+    "Hyper-Speed Sail",
+    "Technical Analysis",
+    "Hydrofoils",
+    "Sail Engineering",
+    "Team Blackwake",
+    "Team Tempest-Sable",
+    "Team Platinum Wave",
+    "Team Deepwater Eclipse"
+  ],
+  "summary": "In a detailed technical commentary, Conglomerate Liaison Ketara Xiang analyzes the decisive design factors of the H$$ Hyper-Speed Sail Race. From plasma-hardened foils to flawed adaptive stabilizers, the contest exposed critical limitations in current hydrofoil technology—highlighting the need for predictive AI control to master Ka-Ga’s lethal storms."
+},
+
+{
+  "id": "cul-2179-hss-kastramunga",
+  "type": "Commentary",
+  "link": "sections/H$$/Ka-Ga’s Dance of Storm.html",
+  "title": "H$$—Ka-Ga’s Dance of Storm and Steel Through a Kastramungan Eye",
+  "journalist": "Hadrin Vaelor",
+  "date": "23.12.2179",
+  "location": "Ka-Ga",
+  "section": "Culture",
+  "tags": [
+    "Ka-Ga",
+    "Hadrin Vaelor",
+    "H$$",
+    "Hyper-Speed Sail",
+    "Kastramunga",
+    "Terrace-Chronicler",
+    "Storm Culture",
+    "Team Blackwake"
+  ],
+  "summary": "In a vivid commentary, Terrace-Chronicler Hadrin Vaelor shares a Kastramungan perspective on the H$$ Hyper-Speed Sail Race. He reflects on how Ka-Ga’s storm-forged contest mirrors the awe and danger of Kastramunga’s mountain duels, contrasting the artistry of chaos mastery with the cold mechanics of corporate ambition."
+},
+
+{
   "id": "sci-2179-virucerex",
   "type": "News",
   "link": "sections/Virucerex-2179/Virucerex-2179.html",
@@ -7,7 +101,6 @@
   "journalist": "Naila Trenholm",
   "date": "21.12.2179",
   "location": "Sut",
-  "importance": 94,
   "section": "Science",
   "tags": [
     "Sut", "Naila Trenholm",
