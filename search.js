@@ -36,6 +36,7 @@ async function loadSearchResults() {
       el.innerHTML = `
         <h2><a href="${article.link}">${article.title}</a></h2>
         <h3><span>${article.journalist}</span> &nbsp;|&nbsp; <span>${article.date}</span> &nbsp;|&nbsp; ${article.type}</h3>
+        <p>${article.summary}</p>
         `;
       featuredGrid.appendChild(el);
     });
